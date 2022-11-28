@@ -1,0 +1,32 @@
+body {
+    margin: auto;
+    padding: auto;
+}
+h1 {text-align: center;}
+a, h3, tr {font-family:Verdana, Geneva, Tahoma, sans-serif;
+color: #dc4263;}
+
+caption {font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold; font-size:x-large;}
+
+table, th, td {border-radius:15px; border-style:dashed; border-color:#ff6e6e; border-width: 1px; border-collapse: separate;}
+table {width: 100%;}
+td, a {text-align: center;
+height: 50px; vertical-align: bottom; font-weight: bold;}
+
+
+text {font-size: x-small;
+font-style: italic;
+font-color: #ffb06e;}
+
+button {border-color: #ffb06e;;
+    color: #dc4263;
+font-weight: bold;
+padding: 15px 32px'
+text-align: center;
+border-radius: 15px;
+}
+
+button:hover {background-color:#ffd94c; font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+button {transition-duration: 0.10s;}

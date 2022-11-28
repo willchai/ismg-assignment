@@ -1,0 +1,110 @@
+
+form#rating {
+  margin: auto auto;
+  padding: 10px;
+  border: 1px groove #ffb06e ;
+  line-height: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 750px;
+}
+
+
+form#rating label {
+  color: #ffb06e;
+  font-weight: bold;
+  font-size: .95em;
+}
+
+div.formRow {
+  display:flow-root;
+  flex-flow: row wrap;
+  margin: 7px;
+  color: #dc4263;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+legend { font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: small;
+color:#dc4263;
+}
+h4 {font-size:larger;
+color:#dc4263;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+font-weight: bold;
+text-align:center;
+border-style:dashed; border-color:#ffb06e;
+
+}
+
+div.formRow>input {
+  width: 200px;
+}
+
+div.formRow>label {
+  width: 150px;
+  text-align: left;
+}
+
+form#rating fieldset {
+  border: 2px solid var(--color);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+form#rating legend {
+  color: var(--color);
+  padding: 5px;
+  font-weight: bold;
+  font-size: .95em;
+  font-variant: small-caps;
+}
+
+form#rating fieldset label {
+  color: black;
+  font-style: italic;
+  font-size: .85em;
+}
+
+#lsug {
+  margin: 10px 0 0 0;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  color: #dc4263;
+  font-weight: bold;
+  text-align: left;
+}
+
+form#rating textarea {
+  display: block;
+  width: 100%;
+  border-color: var(--color);
+}
+
+form#rating div.buttonRow {
+  text-align: center;
+}
+
+form#rating div.buttonRow input {
+  background-color: var(--bgcolor);
+  height: 32px;
+  border: 2px outset var(--color);
+  font-weight: bold;
+  color: #ffb06e;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+
+form#rating div.buttonRow input:focus {
+  color: var(--accent);
+}
+
+input:invalid {border: 2px dashed; border-color:#ffd94c;}
+
+textarea {font-size: small; font-family: Verdana, Geneva, Tahoma, sans-serif;}

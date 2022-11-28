@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link rel="stylesheet" type="text/css" href="services_layout.css" />
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" type="text/css" href="section.css" />
+    <link rel="stylesheet" media="all" href="style1.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="mobile.css" />
+    <script type="text/javascript" src="wishlist.js"></script>
+    <head>
+        <title>About Puppy Playhouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0" />
+   </head>
+   <div class="wrapper">
+   <body>
+    <div id="layout">
+      <header>
+        <h1>Puppy Playhouse</h1><h4>A place for puppies to play while you're away!</h4>
+        <h2> A doggy daycare for all ages and sizes!</h2>
+<h1>Services</h1>
+
+      </header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+      </nav>
+      <aside>
+        <h3 id="wish">Wish List
+        <p id="date"></p></h3>
+        <script>//adding a date object to the wishlist to expand the assignment. 
+          var date = new Date(); 
+        var d = date.toLocaleDateString(); //toLocaleString used to set date to user's computer settings
+        document.getElementById("date").innerHTML = d; //adds date into <p> element
+        </script>
+      </aside>
+     <main>
+        <section>
+          <table>
+            <Table border="1">
+            <caption style="color:#dc4263">Book a Stay!</caption>
+            <tr>
+                <th>Big Dogs</th>
+                <th>Medium Dogs</th>
+                <th>Small Dogs</th>
+                <th>Special Needs</th>
+            </tr>
+            <td id="b01"> <img alt="1" src="Big_Dog_Png.png" /> <br>
+                <text>For dogs who are over 50lbs</text><br>
+              <button id="b1">Click Here!</button>
+            </td>
+          <td id="b02"> <img alt="1" src="medium dog png1.png" /> <br>
+            <text>For dogs who are between 20lbs-50lbs</text><br>
+           <button id="b2">Click Here!</button></a>
+        <td id="b03">  <img alt="1" src="tiny dog png.png" /> <br>
+           <text> For dogs who are under 20lbs</text><br>
+           <button id="b3">Click Here!</button></a>
+            <td id="b04"> <img alt="1" src="special needs dog png.png" /> <br>
+              <text>For dogs who need extra care</text> <br> 
+              <button id="b4">Click Here!</button></a>
+            </td>
+          </table>
+            </div>
+        </section>
+      </main>
+      <footer>
+         Copyright 2022 by ChaiAnne Williams
+      </footer>
+    </div>
+    </body>

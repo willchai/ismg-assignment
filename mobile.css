@@ -1,0 +1,99 @@
+/* I added a mobile.css style so that my website will be accessible on different devices. */
+
+
+{
+    box-sizing: border-box;
+  }
+  
+  #layout {
+    max-width: 1024px;
+    margin: auto;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5px groove #dc4263;
+    background-color: #ffdcbd;
+    border-radius: 15px;
+    padding: 10px;
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul a {
+    color: #ff6e6e;
+    font-weight: bold;
+  }
+  
+  nav ul a:hover {
+    color: #dc4263;
+    text-decoration: underline;
+  }
+  
+  .main-head {
+    grid-area: header;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .main-nav {
+    grid-area: nav;
+  }
+  
+  .side {
+    grid-area: sidebar;
+  }
+  
+  .main-footer {
+    grid-area: footer;
+  }
+  
+  #layout {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: "header"
+      "nav"
+      "content"
+      "sidebar"
+      "footer";
+  }
+  
+  
+  @media (min-width: 480px) {
+    #layout {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: "header  header"
+        "nav     nav"
+        "sidebar content"
+        "footer footer";
+    }
+  
+    nav ul {
+      display: flex;
+      justify-content: space-between
+    }
+  }
+  
+  @media (min-width: 750px) {
+    #layout {
+      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-areas: "header header  header"
+        "nav content sidebar"
+        "nav content content"
+        "footer footer  footer"
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul a:hover {
+      text-decoration: wavy;
+    }
+  }
+  

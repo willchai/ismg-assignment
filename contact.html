@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link rel="stylesheet" type="text/css" href="layout_style.css" />
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <link rel="stylesheet" type="text/css" href="forms.css" />
+    <link rel="stylesheet" media="all" href="style1.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="mobile.css" />
+    <script type="text/javascript" src="wishlist.js"></script>
+    <head>
+        <title>About Puppy Playhouse</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0" />
+ 
+   </head>
+   <body>
+    <div id="layout">
+      <header>
+        <h1>Puppy Playhouse</h1><h4>A place for puppies to play while you're away!</h4>
+        <h2> A doggy daycare for all ages and sizes!</h2>
+<h1>Contact Us</h1>
+
+      </header>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+      </nav>
+      
+      <main>
+        <aside id="contact">
+          <h5>Address</h5>
+          <address>
+            Puppy Playhouse<br />
+              1201 Larimer St.<br />
+          Denver, CO 80204</address>
+          <h5>Phone</h5>
+          <a href="tel:1-303-315-5659">303-315-5659</a>
+        </aside>
+        <aside=
+      <p>
+         <center><img src="https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg?cs=srgb&dl=pexels-lumn-406014.jpg&fm=jpg" height="300" width="500"/></center>
+        </p>
+      <form>
+        <form method="get" action="mailto:chaianne.williams@ucdenver.edu">
+          <h4>Contact Us!</h4>
+          <p>*required</p>
+          <input type="hidden" name="txtH" value="Contact Us" />
+          <div class="formRow">
+            <label for="tname">Your Name*</label>
+            <input type="text" name="txtName" id="tn" size="30" required />
+          </div>
+          <div class="formRow">
+            <label for="temail">Email Address*</label>
+            <input type="email" name="email" id="te" size="30" required />
+          </div>
+          <div class="formRow">
+              <label for="phone">Phone Number*</label>
+              <input type="tel" name="txtPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"  
+              size="25" placeholder="xxx-xxx-xxxx"
+              required/>
+              </div>
+          <div class="formRow">
+            <label for="ldesc">Reason</label>
+            <select name="lstDesc" id="ld">
+             <option>Question</option>
+             <option selected="selected">Booking</option>
+             <option>Other</option>
+             </select>
+          </div>
+          <fieldset>
+            <legend>Preferred Method of Contact* </legend>
+            <label><input type="radio" name="optRate" value="1" id="orate1" checked="checked" required />
+            Phone</label><br />
+            <label><input type="radio" name="optRate" value="2" id="orate2" />
+            Email</label><br />
+          </fieldset>
+        
+          <label id="lsug" for="tsug">Comments* <span id="count">0</span></label>
+          <textarea name="Comments" id="tcomm" rows="5" cols="60"></textarea> <br />
+        
+          <div class="buttonRow">
+            <input type="submit" value="Submit" />&nbsp;&nbsp;</input>
+          </div>
+        </form>
+        
+        </form>
+      <footer>
+         Copyright 2022 by ChaiAnne Williams
+      </footer>
+    </div>
+    </body>
+</html>
